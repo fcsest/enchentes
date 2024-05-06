@@ -6,13 +6,8 @@
             "packages": "bat,zoxide",
             "upgradePackages": true
         },
-        "ghcr.io/devcontainers-contrib/features/exa:latest": {},
-        "ghcr.io/devcontainers-contrib/features/fzf:latest": {},
-        "ghcr.io/eitsupi/devcontainer-features/nushell:latest": {},
-        "ghcr.io/devcontainers-contrib/features/starship:latest": {},
         "ghcr.io/rocker-org/devcontainer-features/renv-cache:latest": {}
     },
-    "onCreateCommand": "bash ./.devcontainer/onCreate.sh",
     "postCreateCommand": "bash ./.devcontainer/postCreate.sh",
     "customizations": {
         "vscode": {
