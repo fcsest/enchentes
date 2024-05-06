@@ -1,0 +1,66 @@
+{
+    "name": "enchentes",
+    "image": "ghcr.io/rocker-org/devcontainer/tidyverse:4.3",
+    "features": {
+        "ghcr.io/rocker-org/devcontainer-features/apt-packages:latest": {
+            "packages": "bat,zoxide",
+            "upgradePackages": true
+        },
+        "ghcr.io/devcontainers-contrib/features/exa:latest": {},
+        "ghcr.io/devcontainers-contrib/features/fzf:latest": {},
+        "ghcr.io/eitsupi/devcontainer-features/nushell:latest": {},
+        "ghcr.io/devcontainers-contrib/features/starship:latest": {},
+        "ghcr.io/rocker-org/devcontainer-features/renv-cache:latest": {}
+    },
+    "onCreateCommand": "bash ./.devcontainer/onCreate.sh",
+    "postCreateCommand": "bash ./.devcontainer/postCreate.sh",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "nu",
+                "terminal.integrated.profiles.linux": {
+                    "nu": {
+                        "path": "nu",
+                        "icon": "terminal",
+                        "color": "terminal.ansiGreen"
+                    },
+                    "bash": {
+                        "path": "bash",
+                        "icon": "terminal-bash"
+                    },
+                    "bash (2)": null,
+                    "dash (2)": null,
+                    "dash": null,
+                    "JavaScript Debug Terminal": null,
+                    "Nushell": null,
+                    "rbash (2)": null,
+                    "rbash": null,
+                    "screen": null,
+                    "sh (2)": null,
+                    "sh": null,
+                    "tmux": null,
+                    "zsh": null
+                },
+                "vscode-autosave.debounceMs": 2000,
+				"vscode-autosave.disableProgressNotifications": true,
+				"vscodeGoogleTranslate.preferredLanguage": "Portuguese"
+            },
+            "extensions": [
+                "codista.vscode-autosave",
+                "DavidAnson.vscode-markdownlint",
+                "eamodio.gitlens",
+                "funkyremi.vscode-google-translate",
+                "github.vscode-github-actions",
+                "GrapeCity.gc-excelviewer",
+                "mhutchie.git-graph",
+                "mutantdino.resourcemonitor",
+                "natqe.reload",
+                "RDebugger.r-debugger",
+                "redhat.vscode-yaml",
+                "REditorSupport.r",
+                "tamasfe.even-better-toml",
+                "TheNuProjectContributors.vscode-nushell-lang"
+            ]
+        }
+    }
+}

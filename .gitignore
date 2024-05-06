@@ -1,0 +1,8 @@
+.DS_Store
+.RData
+.Rproj.user
+.Rhistory
+.Ruserdata
+.Renviron
+.vscode/*
+!.vscode/*.sample
