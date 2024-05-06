@@ -1,0 +1,140 @@
+[
+    // R shortcuts
+    {
+      "description": "Pipe shortcut in R script",
+      "key": "ctrl+shift+m",
+      "command": "type",
+      "args": {
+        "text": " |>"
+      },
+      "when": "editorLangId == r && editorTextFocus && !editorReadonly || editorLangId == rmd && editorTextFocus && !editorReadonly"
+    },
+    {
+      "description": "Pipe shortcut in R terminal",
+      "key": "ctrl+shift+m",
+      "command": "workbench.action.terminal.sendSequence",
+      "args": {
+        "text": " |> "
+      },
+      "when": "terminalFocus"
+    },
+    {
+      "description": "Assigment shortcut in a R script",
+      "key": "alt+-",
+      "command": "type",
+      "args": {
+        "text": " <- "
+      }
+      // "when": "editorLangId == r && editorTextFocus && !editorReadonly || editorLangId == rmd && editorTextFocus && !editorReadonly"
+    },
+    {
+      "description": "Assigment shortcut in R terminal",
+      "key": "alt+-",
+      "command": "workbench.action.terminal.sendSequence",
+      "args": {
+        "text": " <- "
+      },
+      "when": "terminalFocus"
+    },
+    {
+      "description": "Document the R Package developed",
+      "key": "ctrl+shift+f1",
+      "command": "r.document",
+      "when": "resourceLangId == r"
+    },
+    {
+      "description": "Load the R Package developed",
+      "key": "ctrl+shift+f2",
+      "command": "r.loadAll",
+      "when": "resourceLangId == r"
+    },
+    {
+      "description": "Test the R Package developed",
+      "key": "ctrl+shift+f3",
+      "command": "r.test",
+      "when": "resourceLangId == r"
+    },
+    {
+      "description": "Check the R Package developed",
+      "key": "ctrl+shift+f4",
+      "command": "r.check",
+      "when": "resourceLangId == r"
+    },
+    {
+      "description": "Install the R Package developed",
+      "key": "ctrl+shift+f5",
+      "command": "r.build",
+      "when": "resourceLangId == r"
+    },
+    {
+      "description": "Clear workspace",
+      "key": "ctrl+shift+f6",
+      "command": "r.workspaceViewer.clear",
+      "when": "editorLangId == r && editorTextFocus || terminalFocus"
+    },
+    {
+      "description": "View object",
+      "key": "ctrl+shift+f7",
+      "command": "r.runCommandWithSelectionOrWord",
+      "args": "View($$)",
+      "when": "editorLangId == r && editorTextFocus || editorLangId == rmd && editorTextFocus"
+    },
+    {
+      "description": "Names of object",
+      "key": "ctrl+shift+f8",
+      "command": "r.names",
+      "when": "editorLangId == r && editorTextFocus || editorLangId == rmd && editorTextFocus"
+    },
+    {
+      "description": "Run above chunks",
+      "key": "ctrl+alt+p",
+      "command": "r.runAboveChunks",
+      "when": "editorLangId == r && editorTextFocus || editorLangId == rmd && editorTextFocus"
+    },
+    {
+      "description": "Run current chunks",
+      "key": "ctrl+shift+enter",
+      "command": "r.runCurrentChunk",
+      "when": "editorLangId == r && editorTextFocus || editorLangId == rmd && editorTextFocus"
+    },
+    {
+      "description": "New R code chunk",
+      "key": "ctrl+shift+i",
+      "command": "editor.action.insertSnippet",
+      "args": {
+        "snippet": "$LINE_COMMENT %%"
+      },
+      "label": "input indicative of code chunk",
+      "when": "editorLangId == r && editorTextFocus && !editorReadonly"
+    },
+    {
+      "description": "New R markdown code chunk",
+      "key": "ctrl+shift+i",
+      "command": "editor.action.insertSnippet",
+      "args": {
+        "snippet": "```{r}\n${TM_SELECTED_TEXT}$0\n```"
+      },
+      "label": "input indicative of r markdown code chunk",
+      "when": "editorLangId == rmd && editorTextFocus && !editorReadonly"
+    },
+    // Comment line commands
+    {
+      "description": "Comment line with ctrl+/",
+      "key": "ctrl+abnt_c1",
+      "command": "editor.action.addCommentLine",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    // Remove keybidings
+    {
+      "description": "Detach markers view active with ctrl+shift+m",
+      "key": "ctrl+shift+m",
+      "command": "-workbench.actions.view.problems",
+      "when": "workbench.panel.markers.view.active"
+    },
+    {
+      "description": "Detach run current chunk with ctrl+shift+enter",
+      "key": "ctrl+shift+enter",
+      "command": "-r.runCurrentChunk",
+      "when": "editorTextFocus && editorLangId == 'rmd'"
+    }
+  ]

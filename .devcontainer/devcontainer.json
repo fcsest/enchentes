@@ -1,6 +1,6 @@
 {
     "name": "enchentes",
-    "image": "ghcr.io/rocker-org/devcontainer/tidyverse:4.3",
+    "image": "ghcr.io/rocker-org/devcontainer/geospatial:4.4",
     "features": {
         "ghcr.io/rocker-org/devcontainer-features/apt-packages:latest": {
             "packages": "bat,zoxide",
@@ -59,6 +59,7 @@
                 "redhat.vscode-yaml",
                 "REditorSupport.r",
                 "tamasfe.even-better-toml",
+                "TianyiShi.rmarkdown",
                 "TheNuProjectContributors.vscode-nushell-lang"
             ]
         }

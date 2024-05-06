@@ -1,0 +1,67 @@
+{
+    "[r]": {
+        "editor.defaultFormatter": "REditorSupport.r",
+        "editor.detectIndentation": false,
+        "editor.formatOnSave": true,
+        "editor.indentSize": "tabSize",
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "[rmd]": {
+        "editor.defaultFormatter": "REditorSupport.r",
+        "editor.formatOnSave": true,
+        "editor.indentSize": "tabSize",
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "editor.rulers": [
+        80
+    ],
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "r.alwaysUseActiveTerminal": false,
+    "r.lsp.debug": true,
+    "r.lsp.diagnostics": true,
+    "r.lsp.enabled": true,
+    "r.session.data.pageSize": 0,
+    "r.session.data.rowLimit": 100000,
+    "r.session.emulateRStudioAPI": true,
+    "r.session.levelOfObjectDetail": "Detailed",
+    "r.session.objectTimeout": 100000,
+    "r.session.useWebServer": true,
+    "r.session.viewers.viewColumn": {
+        "plot": "Active",
+        "viewer": "Active",
+        "view": "Active",
+        "helpPanel": "Active"
+    },
+    "r.session.watchGlobalEnvironment": true,
+    "r.sessionWatcher": true,
+    "r.source.encoding": "UTF-8",
+    "r.source.focus": "editor",
+    "r.workspaceViewer.clearPrompt": false,
+    "r.workspaceViewer.removeHiddenItems": true,
+    "r.workspaceViewer.showObjectSize": true
+    // "sqltools.connections": [
+    //     {
+    //         "previewLimit": 1000,
+    //         "server": "me.coy3ddkwm8lj.sa-east-1.rds.amazonaws.com",
+    //         "port": 5432,
+    //         "askForPassword": true,
+    //         "driver": "PostgreSQL",
+    //         "name": "Amazon RDS mercadoedu",
+    //         "database": "me",
+    //         "username": "fernando"
+    //     },
+    //     {
+    //         "previewLimit": 1000,
+    //         "server": "me.coy3ddkwm8lj.sa-east-1.rds.amazonaws.com",
+    //         "port": 5432,
+    //         "askForPassword": true,
+    //         "driver": "PostgreSQL",
+    //         "name": "Amazon RDS dev",
+    //         "database": "ia_text_class",
+    //         "username": "fernando"
+    //     }
+    // ]
+}
