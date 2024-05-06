@@ -8,9 +8,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-install.packages("flexdashboard")
-install.packages("DT")
-install.packages("leaflet")
+
 library(knitr)
 library(leaflet)
 library(flexdashboard)
