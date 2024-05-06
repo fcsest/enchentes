@@ -14,9 +14,27 @@
         "editor.insertSpaces": true,
         "editor.tabSize": 4
     },
+    "[R]": {
+        "editor.defaultFormatter": "REditorSupport.r",
+        "editor.detectIndentation": false,
+        "editor.formatOnSave": true,
+        "editor.indentSize": "tabSize",
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "[Rmd]": {
+        "editor.defaultFormatter": "REditorSupport.r",
+        "editor.formatOnSave": true,
+        "editor.indentSize": "tabSize",
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
     "editor.rulers": [
         80
     ],
+    "files.associations": {
+        "*.Rmd": "rmd"
+    },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "r.alwaysUseActiveTerminal": false,
@@ -42,26 +60,4 @@
     "r.workspaceViewer.clearPrompt": false,
     "r.workspaceViewer.removeHiddenItems": true,
     "r.workspaceViewer.showObjectSize": true
-    // "sqltools.connections": [
-    //     {
-    //         "previewLimit": 1000,
-    //         "server": "me.coy3ddkwm8lj.sa-east-1.rds.amazonaws.com",
-    //         "port": 5432,
-    //         "askForPassword": true,
-    //         "driver": "PostgreSQL",
-    //         "name": "Amazon RDS mercadoedu",
-    //         "database": "me",
-    //         "username": "fernando"
-    //     },
-    //     {
-    //         "previewLimit": 1000,
-    //         "server": "me.coy3ddkwm8lj.sa-east-1.rds.amazonaws.com",
-    //         "port": 5432,
-    //         "askForPassword": true,
-    //         "driver": "PostgreSQL",
-    //         "name": "Amazon RDS dev",
-    //         "database": "ia_text_class",
-    //         "username": "fernando"
-    //     }
-    // ]
 }
