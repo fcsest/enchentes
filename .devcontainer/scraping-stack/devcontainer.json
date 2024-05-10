@@ -1,0 +1,82 @@
+{
+	"name": "scraping-stack",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"containerEnv": {
+		"SAM_CLI_TELEMETRY": "0"
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:latest": {},
+		"ghcr.io/devcontainers/features/python:latest": {
+			"version": "3.12.3"
+		},
+		"ghcr.io/rocker-org/devcontainer-features/apt-packages:latest": {
+			"packages": "bat,zoxide",
+			"upgradePackages": true
+		},
+		"ghcr.io/devcontainers-contrib/features/exa:latest": {},
+		"ghcr.io/devcontainers-contrib/features/fzf:latest": {},
+		"ghcr.io/eitsupi/devcontainer-features/nushell:latest": {},
+		"ghcr.io/devcontainers-contrib/features/starship:latest": {},
+		"ghcr.io/devcontainers/features/aws-cli:latest": {},
+		"ghcr.io/customink/codespaces-features/sam-cli:latest": {}
+	},
+	"mounts": [
+		"source=${env:HOME}${env:USERPROFILE}/.aws,target=/home/vscode/.aws,type=bind,consistency=cached"
+	],
+	"onCreateCommand": "bash ./.devcontainer/setup.sh",
+    "updateContentCommand": {
+		"Install python dependencies": "pip3 install -r vscode-debug-requirements.txt"
+    },
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"amazonwebservices.aws-toolkit-vscode",
+				"charliermarsh.ruff",
+				"codista.vscode-autosave",
+				"DavidAnson.vscode-markdownlint",
+				"eamodio.gitlens",
+				"funkyremi.vscode-google-translate",
+				"GrapeCity.gc-excelviewer",
+				"mechatroner.rainbow-csv",
+				"Meezilla.json",
+				"mhutchie.git-graph",
+				"ms-azuretools.vscode-docker",
+				"ms-python.black-formatter",
+				"ms-python.isort",
+				"ms-python.mypy-type-checker",
+				"mutantdino.resourcemonitor",
+				"natqe.reload",
+				"rangav.vscode-thunder-client",
+				"redhat.vscode-yaml",
+				"tamasfe.even-better-toml",
+				"TheNuProjectContributors.vscode-nushell-lang"
+			],
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "nu",
+				"terminal.integrated.profiles.linux": {
+					"nu": {
+						"path": "nu",
+						"icon": "terminal",
+						"color": "terminal.ansiGreen"
+					},
+					"bash": {
+						"path": "bash",
+						"icon": "terminal-bash"
+					},
+					"bash (2)": null,
+					"dash": null,
+					"dash (2)": null,
+					"rbash": null,
+					"rbash (2)": null,
+					"screen": null,
+					"sh": null,
+					"sh (2)": null,
+					"tmux": null
+				},
+				"vscode-autosave.debounceMs": 2000,
+				"vscode-autosave.disableProgressNotifications": true,
+				"vscodeGoogleTranslate.preferredLanguage": "Portuguese"
+			}
+		}
+	}
+}
