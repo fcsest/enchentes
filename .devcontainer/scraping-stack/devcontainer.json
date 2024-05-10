@@ -23,7 +23,7 @@
 	"mounts": [
 		"source=${env:HOME}${env:USERPROFILE}/.aws,target=/home/vscode/.aws,type=bind,consistency=cached"
 	],
-    "workspaceFolder": "/workspace/projects/scraping",
+    "workspaceFolder": "/workspaces/enchentes/projects/scraping",
 	"onCreateCommand": "bash ../../.devcontainer/onCreate.sh && ../../.devcontainer/scraping-stack/setup.sh",
     "updateContentCommand": {
 		"Install python dependencies": "pip3 install -r vscode-debug-requirements.txt"
