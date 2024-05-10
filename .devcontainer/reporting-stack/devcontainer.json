@@ -1,5 +1,5 @@
 {
-    "name": "enchentes",
+    "name": "reporting-stack",
     "image": "ghcr.io/rocker-org/devcontainer/geospatial:4.4",
     "features": {
         "ghcr.io/rocker-org/devcontainer-features/apt-packages:latest": {

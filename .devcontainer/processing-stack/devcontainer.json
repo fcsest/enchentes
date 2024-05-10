@@ -1,5 +1,5 @@
 {
-    "name": "qc",
+    "name": "processing-stack",
     "image": "ghcr.io/rocker-org/devcontainer/tidyverse:4.4",
     "features": {
         "ghcr.io/rocker-org/devcontainer-features/apt-packages:latest": {
