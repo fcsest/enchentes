@@ -19,7 +19,7 @@
 		"ghcr.io/devcontainers-contrib/features/starship:latest": {}
 	},
 	"mounts": [
-		"source=${env:HOME}${env:USERPROFILE}/.ssh,target=/.ssh,type=bind,consistency=cached"
+		"source=${env:HOME}${env:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
 	],
     "workspaceFolder": "/workspaces/enchentes/projects/scraping",
 	"onCreateCommand": "bash ../../.devcontainer/onCreate.sh && ../../.devcontainer/scraping-stack/setup.sh",

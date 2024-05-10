@@ -13,7 +13,7 @@
         "ghcr.io/rocker-org/devcontainer-features/renv-cache:latest": {}
     },
 	"mounts": [
-		"source=${env:HOME}${env:USERPROFILE}/.ssh,target=/.ssh,type=bind,consistency=cached"
+		"source=${env:HOME}${env:USERPROFILE}/.ssh,target=/home/rstudio/.ssh,type=bind,consistency=cached"
 	],
     "workspaceFolder": "/workspaces/enchentes/projects/processing",
     "onCreateCommand": "bash ../../.devcontainer/onCreate.sh",
