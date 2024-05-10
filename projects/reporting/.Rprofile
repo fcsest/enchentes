@@ -1,3 +1,5 @@
+source("renv/activate.R")
+
 options(
     cli.hyperlink = TRUE,
     shiny.launch.browser = TRUE,

@@ -10,7 +10,11 @@
 		"ghcr.io/devcontainers-contrib/features/exa:latest": {},
 		"ghcr.io/devcontainers-contrib/features/fzf:latest": {},
 		"ghcr.io/eitsupi/devcontainer-features/nushell:latest": {},
-		"ghcr.io/devcontainers-contrib/features/starship:latest": {}
+		"ghcr.io/devcontainers-contrib/features/starship:latest": {},
+        "ghcr.io/rocker-org/devcontainer-features/quarto-cli:latest": {
+            "installChromium": true,
+            "version": "1.5.23"
+        }
     },
     "onCreateCommand": "bash ../../.devcontainer/onCreate.sh",
     "postCreateCommand": "bash ../../.devcontainer/reporting-stack/postCreate.sh",
@@ -66,7 +70,8 @@
                 "REditorSupport.r",
                 "tamasfe.even-better-toml",
                 "TianyiShi.rmarkdown",
-                "TheNuProjectContributors.vscode-nushell-lang"
+                "TheNuProjectContributors.vscode-nushell-lang",
+                "quarto.quarto"
             ]
         }
     }
