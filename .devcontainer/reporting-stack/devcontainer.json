@@ -15,6 +15,9 @@
     "onCreateCommand": "bash ../../.devcontainer/onCreate.sh",
     "postCreateCommand": "bash ../../.devcontainer/reporting-stack/postCreate.sh",
     "workspaceFolder": "/workspaces/enchentes/projects/reporting",
+	"mounts": [
+		"source=${env:HOME}${env:USERPROFILE}/.ssh,target=/.ssh,type=bind,consistency=cached"
+	],
     "customizations": {
         "vscode": {
             "settings": {
