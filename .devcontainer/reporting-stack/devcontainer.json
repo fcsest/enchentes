@@ -16,7 +16,7 @@
     "postCreateCommand": "bash ../../.devcontainer/reporting-stack/postCreate.sh",
     "workspaceFolder": "/workspaces/enchentes/projects/reporting",
 	"mounts": [
-		"source=${env:HOME}${env:USERPROFILE}/.ssh,target=/.ssh,type=bind,consistency=cached"
+		"source=${env:HOME}${env:USERPROFILE}/.ssh,target=/home/rstudio/.ssh,type=bind,consistency=cached"
 	],
     "customizations": {
         "vscode": {
