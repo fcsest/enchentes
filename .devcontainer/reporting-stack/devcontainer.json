@@ -1,5 +1,5 @@
 {
-    "name": "reporting-stack",
+    "name": "Reporting stack",
     "image": "ghcr.io/rocker-org/devcontainer/geospatial:4.4",
     "features": {
         "ghcr.io/rocker-org/devcontainer-features/apt-packages:latest": {
@@ -8,7 +8,9 @@
         },
         "ghcr.io/rocker-org/devcontainer-features/renv-cache:latest": {}
     },
-    "postCreateCommand": "bash ./.devcontainer/postCreate.sh",
+    "onCreateCommand": "bash ../../.devcontainer/onCreate.sh",
+    "postCreateCommand": "bash ../../.devcontainer/reporting-stack/postCreate.sh",
+    "workspaceFolder": "/workspace/projects/reporting",
     "customizations": {
         "vscode": {
             "settings": {

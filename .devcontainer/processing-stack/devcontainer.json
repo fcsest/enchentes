@@ -1,5 +1,5 @@
 {
-    "name": "processing-stack",
+    "name": "Processing stack",
     "image": "ghcr.io/rocker-org/devcontainer/tidyverse:4.4",
     "features": {
         "ghcr.io/rocker-org/devcontainer-features/apt-packages:latest": {
@@ -12,8 +12,9 @@
         "ghcr.io/devcontainers-contrib/features/starship:latest": {},
         "ghcr.io/rocker-org/devcontainer-features/renv-cache:latest": {}
     },
-    "onCreateCommand": "bash ./.devcontainer/onCreate.sh",
-    "postCreateCommand": "bash ./.devcontainer/postCreate.sh",
+    "workspaceFolder": "/workspace/projects/processing",
+    "onCreateCommand": "bash ../../.devcontainer/onCreate.sh",
+    "postCreateCommand": "bash ../../.devcontainer/processing-stack/postCreate.sh",
     "customizations": {
         "vscode": {
             "settings": {

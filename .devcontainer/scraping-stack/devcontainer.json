@@ -1,5 +1,5 @@
 {
-	"name": "scraping-stack",
+	"name": "Scraping stack",
 	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
 	"containerEnv": {
 		"SAM_CLI_TELEMETRY": "0"
@@ -23,7 +23,8 @@
 	"mounts": [
 		"source=${env:HOME}${env:USERPROFILE}/.aws,target=/home/vscode/.aws,type=bind,consistency=cached"
 	],
-	"onCreateCommand": "bash ./.devcontainer/setup.sh",
+    "workspaceFolder": "/workspace/projects/scraping",
+	"onCreateCommand": "bash ../../.devcontainer/onCreate.sh && ../../.devcontainer/scraping-stack/setup.sh",
     "updateContentCommand": {
 		"Install python dependencies": "pip3 install -r vscode-debug-requirements.txt"
     },
